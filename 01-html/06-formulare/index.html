@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Die Welt der Musikinstrumente - Dein Wunschinstrument</title>
+    </head>
+    <body>
+        <h1>Wunschinstrument auswählen</h1>
+        <form action="/submit" method="post">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+            <br><br>
+    
+            <!-- Email -->
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+            <br><br>
+    
+            <!-- Instrumentenfamilie -->
+            <label for="instrumentenfamilie">Instrumentenfamilie:</label>
+            <select id="instrumentenfamilie" name="instrumentenfamilie" required>
+                <option value="" disabled selected>Bitte wählen...</option>
+                <option value="strings">Streichinstrumente</option>
+                <option value="winds">Blasinstrumente</option>
+                <option value="keyboards">Tasteninstrumente</option>
+                <option value="percussion">Schlaginstrumente</option>
+            </select>
+            <br><br>
+    
+            <!-- Wunschinstrument -->
+            <label for="wunschinstrument">Wunschinstrument:</label>
+            <input type="text" id="wunschinstrument" name="wunschinstrument" placeholder="Z. B. Violine" required>
+            <br><br>
+    
+            <!-- Kommentar -->
+            <label for="kommentar">Warum möchtest du dieses Instrument?</label>
+            <textarea id="kommentar" name="kommentar" rows="5" cols="40" placeholder="Deine Nachricht..."></textarea>
+            <br><br>
+    
+            <!-- Absenden -->
+            <button type="submit">Absenden</button>
+        </form>
+    </body>    
+</html>

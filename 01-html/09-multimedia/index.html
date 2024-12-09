@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio und Video Beispiel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        audio, video {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio- und Video-Elemente in HTML</h1>
+    <p>Hier sind Beispiele für die Verwendung von Audio- und Video-Elementen mit verschiedenen Dateiformaten.</p>
+
+    <!-- Audio-Beispiel -->
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="audio-example.mp3" type="audio/mpeg">
+        <source src="audio-example.ogg" type="audio/ogg">
+        Ihr Browser unterstützt kein Audio-Element. Bitte laden Sie die Datei herunter:
+        <a href="audio-example.mp3">audio-example.mp3</a>
+    </audio>
+
+    <!-- Video-Beispiel -->
+    <h2>Video</h2>
+    <video controls width="640" height="360">
+        <source src="video-example.mp4" type="video/mp4">
+        <source src="video-example.webm" type="video/webm">
+        Ihr Browser unterstützt kein Video-Element. Bitte laden Sie die Datei herunter:
+        <a href="video-example.mp4">video-example.mp4</a>
+    </video>
+
+    <p>Mit den `<source>`-Elementen können mehrere Formate bereitgestellt werden, sodass der Browser das am besten unterstützte Format auswählt.</p>
+</body>
+</html>

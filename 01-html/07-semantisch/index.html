@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head lang="de">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantische HTML-Elemente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, nav, main, section, article, aside, footer {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        nav {
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Semantische HTML-Elemente</h1>
+        <p>Semantische Elemente tragen Bedeutung und helfen, die Struktur einer Webseite klar zu definieren.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#nav">Nav</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#section">Section</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#aside">Aside</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="header">
+            <h2>Header</h2>
+            <p>Das <code>&lt;header&gt;</code>-Element enthält Einleitungen, Überschriften oder Navigationslinks, die den Inhalt der Seite beschreiben.</p>
+        </section>
+
+        <section id="nav">
+            <h2>Nav</h2>
+            <p>Das <code>&lt;nav&gt;</code>-Element wird für Navigationslinks verwendet, wie die oben angezeigte Liste.</p>
+        </section>
+
+        <section id="main">
+            <h2>Main</h2>
+            <p>Das <code>&lt;main&gt;</code>-Element enthält den Hauptinhalt einer Webseite. Dieser Inhalt sollte direkt zum Thema der Seite beitragen.</p>
+        </section>
+
+        <section id="section">
+            <h2>Section</h2>
+            <p>Das <code>&lt;section&gt;</code>-Element wird verwendet, um thematisch zusammenhängende Inhalte zu gruppieren. Jede Section hat in der Regel eine Überschrift.</p>
+        </section>
+
+        <section id="article">
+            <h2>Article</h2>
+            <p>Das <code>&lt;article&gt;</code>-Element stellt einen eigenständigen Inhalt dar, wie einen Blogpost oder eine Nachricht, der für sich allein stehen könnte.</p>
+        </section>
+
+        <aside id="aside">
+            <h2>Aside</h2>
+            <p>Das <code>&lt;aside&gt;</code>-Element enthält Inhalte, die in Zusammenhang mit dem Hauptinhalt stehen, aber nicht zentral sind, wie z. B. Sidebar-Informationen oder Werbung.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 - Das ist ein semantischer Footer.</p>
+    </footer>
+</body>
+</html>
